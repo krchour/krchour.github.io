@@ -2,52 +2,49 @@
 <html>
 <head>
   <title>Kroesna Chour – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Times New Roman, sans-serif;
-      margin: 40px;
-      background: #ffffff;
-      color: #111;
-    }
-    h1 {
-      font-size: 2.5em;
-    }
-    .project {
-      margin-bottom: 40px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div class="container">
 
-<h1>Kroesna Chour</h1>
-<p>Graphic Design Portfolio</p>
+  <div class="nav">
+    <h2>Your Name</h2>
+    <div>
+      <a href="#">Work</a> |
+      <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </div>
+  </div>
 
-<div class="project">
-  <h2>Website for Delegate Michelle Maldonado</h2>
-  <img src="images/project1.jpg">
-  <p>Designed and developed a website for Virginia House Delegate Michelle Maldonado.</p>
+  <div class="hero">
+    <h1>Graphic Design Portfolio</h1>
+    <p>Designing clear, impactful visuals—from political campaigns to deep space imaging.</p>
+  </div>
+
+  <div class="grid">
+
+    <a href="projects/campaign-website.html" class="project-card">
+      <img src="images/website.jpg">
+      <h3>Campaign Website</h3>
+      <p>UX/UI + Development</p>
+    </a>
+
+    <a href="projects/campaign-graphics.html" class="project-card">
+      <img src="images/graphics.jpg">
+      <h3>Campaign Graphics</h3>
+      <p>Branding + Visual Design</p>
+    </a>
+
+    <a href="projects/messier.html" class="project-card">
+      <img src="images/messier.jpg">
+      <h3>Messier Astrophotography</h3>
+      <p>Imaging + Visual Storytelling</p>
+    </a>
+
+  </div>
+
 </div>
-
-<div class="project">
-  <h2>Campaign Graphics</h2>
-  <img src="images/project2.jpg">
-  <p>Social media and branding materials for political campaigns.</p>
-</div>
-
-<div class="project">
-  <h2>Messier Astrophotography</h2>
-  <img src="Space Images/Messier 63.jpg">
-  <img src="Space Images/Messier 78.jpg">
-  <img src="Space Images/Messier 94.jpg">
-  <img src="Space Images/Messier 101.jpg">
-  <p>Deep-space imaging and processing of Messier objects.</p>
-</div>
-
 </body>
 </html>
