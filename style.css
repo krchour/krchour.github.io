@@ -70,7 +70,7 @@ a {
   gap: 20px;
   margin-top: 20px;
 }
-
+}
 .image-grid img {
   width: 100%;
   border-radius: 12px;
@@ -78,5 +78,41 @@ a {
   @media (max-width: 700px) {
   .image-grid {
     grid-template-columns: 1fr;
+  }
+}
+.magazine-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.magazine-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Layout control */
+.mag-hero {
+  grid-row: span 2;
+}
+
+.mag-wide {
+  grid-column: span 2;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .magazine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mag-hero,
+  .mag-wide {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
